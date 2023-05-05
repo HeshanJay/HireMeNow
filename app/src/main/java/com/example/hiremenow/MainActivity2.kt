@@ -53,7 +53,7 @@ class MainActivity2 : AppCompatActivity() {
             )
         }
     }
-
+//delete Records
     private fun deleteRecord(
         id: String
     ){
