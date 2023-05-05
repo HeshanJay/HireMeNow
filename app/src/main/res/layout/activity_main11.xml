@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity11">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tha_upd" />
+
+    <TextView
+        android:id="@+id/retrievename"
+        android:layout_width="91dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#0D2ACA"
+        android:textColorHint="#090808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/retrievemail"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/delete_layoutMarginTop"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Address"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievename" />
+
+    <TextView
+        android:id="@+id/retrievephone"
+        android:layout_width="86dp"
+        android:layout_height="@dimen/delete_layoutHeight"
+        android:layout_marginTop="@dimen/delete_layoutMarginTop"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Phone"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievemail" />
+
+    <TextView
+        android:id="@+id/retrievesubject"
+        android:layout_width="103dp"
+        android:layout_height="@dimen/delete_layoutHeight"
+        android:layout_marginTop="@dimen/delete_layoutMarginTop"
+        android:layout_marginEnd="152dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Age"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievephone" />
+
+    <TextView
+        android:id="@+id/retrievemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/delete_layoutHeight"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Consultation Date"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievesubject" />
+
+    <TextView
+        android:id="@+id/tv_Names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Nipun Wijenayaka"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievename" />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/acme"
+        android:text="251/14,yakkala,Gampaha"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievemail" />
+
+    <TextView
+        android:id="@+id/tv_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/acme"
+        android:text="0715197904"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievephone" />
+
+    <TextView
+        android:id="@+id/tv_Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="192dp"
+        android:fontFamily="@font/acme"
+        android:text="24"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievesubject" />
+
+    <TextView
+        android:id="@+id/tv_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/deleteUpdate_textViewMarginTop"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/acme"
+        android:text="sat 3pm-5pm"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievemessage" />
+
+    <Button
+        android:id="@+id/tvEdit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="CANCEL"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message" />
+
+    <Button
+        android:id="@+id/tvDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="CONFIRM"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message" />
+
+    <ImageView
+        android:id="@+id/home13btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/apply13btn"
+        app:layout_constraintTop_toBottomOf="@+id/tvEdit"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/apply13btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/add13btn"
+        app:layout_constraintTop_toBottomOf="@+id/tvEdit"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/add13btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/help13btn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/help13btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile13btn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/profile13btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDelete"
+        app:srcCompat="@drawable/selected_consultant" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

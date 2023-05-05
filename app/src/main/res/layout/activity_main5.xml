@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <ImageView
+        android:id="@+id/updateinterfaceimg"
+        android:layout_width="489dp"
+        android:layout_height="826dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        app:srcCompat="@drawable/updateeeeeeee" />
+
+    <ImageView
+        android:id="@+id/home5btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="623dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/apply5btn"
+        app:layout_constraintTop_toTopOf="@+id/updateinterfaceimg"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/apply5btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="623dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/add5btn"
+        app:layout_constraintTop_toTopOf="@+id/updateinterfaceimg"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/add5btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/help5btn"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/help5btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile5btn"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/profile5btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateconfirm"
+        app:srcCompat="@drawable/selected_consultant" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="268dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Name"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updateinterfaceimg" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="414dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Email"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="407dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Phone"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="406dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Subject"
+        android:inputType="textPersonName"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updateinterfaceimg" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="408dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Message"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updateinterfaceimg" />
+
+    <Button
+        android:id="@+id/updateconfirm"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="CONFIRM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

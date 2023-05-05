@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <ImageView
+        android:id="@+id/pgbtn2"
+        android:layout_width="503dp"
+        android:layout_height="891dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_999" />
+
+    <TextView
+        android:id="@+id/add_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/aclonica"
+        android:text="My Tickets"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all2btn"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="Inquiry about technical issue"
+        android:textColor="#ECE8E8"
+        android:textColorHint="#EFE9E9"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all1btn" />
+
+    <Button
+        android:id="@+id/all1btn"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="100dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="Inquiry on Jobs"
+        android:textColor="#F4EEEE"
+        android:textColorHint="#F6F6F6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_job" />
+
+    <Button
+        android:id="@+id/newbtn"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/acme"
+        android:text="New"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allbtn"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+
+        android:text="All"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <ImageView
+        android:id="@+id/arrowbtn"
+        android:layout_width="65dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all2btn"
+        app:srcCompat="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/home3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/addjob3btn"
+        app:layout_constraintTop_toBottomOf="@+id/all2btn"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/addjob3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/add3btn"
+        app:layout_constraintTop_toBottomOf="@+id/all2btn"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/add3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/help3btn"
+        app:layout_constraintTop_toBottomOf="@+id/all2btn"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/help3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile3btn"
+        app:layout_constraintTop_toBottomOf="@+id/all2btn"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/profile3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selected_consultant" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

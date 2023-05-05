@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/deleteinterface"
+        android:layout_width="509dp"
+        android:layout_height="845dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        app:srcCompat="@drawable/sas_del" />
+
+    <ImageView
+        android:id="@+id/home4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/apply4btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletecancelbtn"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/apply4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/add4btn"
+        app:layout_constraintTop_toBottomOf="@+id/deletecancelbtn"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/add4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/help4btn"
+        app:layout_constraintTop_toBottomOf="@+id/deletemessagegiven"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/help4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile4btn"
+        app:layout_constraintTop_toBottomOf="@+id/deletemessagegiven"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/profile4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteconfirmbtn"
+        app:srcCompat="@drawable/selected_consultant" />
+
+    <TextView
+        android:id="@+id/deletename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="@font/acme"
+        android:text="Name"
+        android:textColor="#0D2ACA"
+        android:textColorHint="#090808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deletenamegiven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/acme"
+        android:text="Sasrika Lakdini Neewin"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletename" />
+
+    <TextView
+        android:id="@+id/deleteemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/acme"
+        android:text="Email"
+        android:textColor="#0D2ACA"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletenamegiven" />
+
+    <TextView
+        android:id="@+id/deleteemailgiven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="@font/acme"
+        android:text="sasri2001@gmail.com"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/deleteinterface"
+        app:layout_constraintTop_toBottomOf="@+id/deleteemail" />
+
+    <TextView
+        android:id="@+id/deletephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/acme"
+        android:text="Phone"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteemailgiven" />
+
+    <TextView
+        android:id="@+id/deletesubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="@font/acme"
+        android:text="Subject"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletephonegiven" />
+
+    <TextView
+        android:id="@+id/deletephonegiven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:fontFamily="@font/acme"
+        android:text="0715177104"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletephone" />
+
+    <TextView
+        android:id="@+id/deletesubjectgiven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/acme"
+        android:text="Inquiry on adding a job"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletesubject" />
+
+    <TextView
+        android:id="@+id/deletemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:fontFamily="@font/acme"
+        android:text="Message"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletesubjectgiven" />
+
+    <TextView
+        android:id="@+id/deletemessagegiven"
+        android:layout_width="387dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/acme"
+        android:text="Can I please know how to add images to add jobs"
+        android:textColor="#070707"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletemessage" />
+
+    <Button
+        android:id="@+id/deletecancelbtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/deleteconfirmbtn"
+        app:layout_constraintTop_toBottomOf="@+id/deletemessagegiven" />
+
+    <Button
+        android:id="@+id/deleteconfirmbtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="CONFIRM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletemessagegiven" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/interfaceimg"
+        android:layout_width="539dp"
+        android:layout_height="806dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newone" />
+
+    <TextView
+        android:id="@+id/HelpSupp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:fontFamily="@font/aclonica"
+        android:text="Help Desk Support"
+        android:textColor="#FAF7F7"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namecus"
+        android:layout_width="345dp"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="@dimen/dimension_edtTextMarginTop"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/NAME"
+        android:inputType="textPersonName"
+        android:paddingTop="8dp"
+        android:textColor="#EDDDDD"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HelpSupp" />
+
+    <EditText
+        android:id="@+id/emailcus"
+        android:layout_width="345dp"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="@dimen/dimension_edtTextMarginTop"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/EMAIL"
+        android:inputType="textEmailAddress"
+        android:textColor="#0B0909"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namecus" />
+
+    <EditText
+        android:id="@+id/phonecus"
+        android:layout_width="345dp"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="@dimen/dimension_edtTextMarginTop"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/PHONE"
+        android:inputType="phone"
+        android:textColor="#0B0909"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailcus" />
+
+    <EditText
+        android:id="@+id/subjecus"
+        android:layout_width="345dp"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="@dimen/dimension_edtTextMarginTop"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/SUBJECT"
+        android:inputType="textPersonName"
+        android:textColor="#070707"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonecus" />
+
+    <EditText
+        android:id="@+id/Messagecus"
+        android:layout_width="345dp"
+        android:layout_height="@dimen/dimension_height"
+        android:layout_marginTop="@dimen/dimension_edtTextMarginTop"
+        android:layout_marginEnd="@dimen/dimension_edtTextMarginEnd"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/MESSAGE"
+        android:inputType="textPersonName"
+        android:textColor="#0B0909"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjecus" />
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="CANCEL"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/subbmitbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Messagecus" />
+
+    <Button
+        android:id="@+id/subbmitbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="SUBMIT"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Messagecus" />
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="79dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="752dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:backgroundTint="#DFF6F0F0"
+        android:contentDescription="homepage"
+        app:layout_constraintEnd_toStartOf="@+id/applybtn"
+        app:layout_constraintTop_toTopOf="@+id/interfaceimg"
+        app:srcCompat="@drawable/unselected_home"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/applybtn"
+        android:layout_width="84dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="748dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:backgroundTint="#DFF6F0F0"
+        android:contentDescription="Applypage"
+        app:layout_constraintEnd_toStartOf="@+id/addbtn"
+        app:layout_constraintTop_toTopOf="@+id/interfaceimg"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:backgroundTint="#DFF6F0F0"
+        android:contentDescription="Addjobpage"
+        app:layout_constraintEnd_toStartOf="@+id/helpbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Messagecus"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageButton
+        android:id="@+id/profilebtn"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="748dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:backgroundTint="#DFF6F0F0"
+        android:contentDescription="Profile userpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interfaceimg"
+        app:srcCompat="@drawable/unselected_consultant" />
+
+    <ImageButton
+        android:id="@+id/helpbtn"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="748dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:backgroundTint="#DFF6F0F0"
+        android:contentDescription="Helpuser"
+        app:layout_constraintEnd_toStartOf="@+id/profilebtn"
+        app:layout_constraintTop_toTopOf="@+id/interfaceimg"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

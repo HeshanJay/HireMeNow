@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity12">
+
+    <ImageView
+        android:id="@+id/interface12"
+        android:layout_width="410dp"
+        android:layout_height="729dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_999" />
+
+
+    <TextView
+        android:id="@+id/myaccountuser"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/consultuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Consultant"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myaccountuser"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/applyJobuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Apply  Job"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addjobuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Add  Job"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/helpuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Help Center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/home12btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="360dp"
+        app:layout_constraintEnd_toEndOf="@+id/interface12"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/applyjob12btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="276dp"
+        app:layout_constraintEnd_toEndOf="@+id/interface12"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob12btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="@+id/interface12"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/helpbtn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="@+id/interface12"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/consultjob12btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/interface12"
+        app:layout_constraintTop_toTopOf="@+id/interface12"
+        app:srcCompat="@drawable/selected_consultant" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

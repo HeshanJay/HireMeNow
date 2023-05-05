@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449450305722",
+    "firebase_url": "https://hiremenow-eca59-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hiremenow-eca59",
+    "storage_bucket": "hiremenow-eca59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449450305722:android:67a270957f302e6f98ba83",
+        "android_client_info": {
+          "package_name": "com.example.hiremenow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449450305722-nmdg6acgj04mvvif3d21rfnu1h8t951e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2kedqLhjeAWAKiy-Z9KA7XzLy27ul3es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449450305722-nmdg6acgj04mvvif3d21rfnu1h8t951e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

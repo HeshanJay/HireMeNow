@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/inter4pg"
+        android:layout_width="411dp"
+        android:layout_height="729dp"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ticket" />
+
+    <TextView
+        android:id="@+id/retrievename"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#0D2ACA"
+        android:textColorHint="#090808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_optimizationLevel="dimensions" />
+
+    <TextView
+        android:id="@+id/retrievemail"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievename" />
+
+    <TextView
+        android:id="@+id/retrievephone"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Phone"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg" />
+
+    <TextView
+        android:id="@+id/retrievesubject"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Subject"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievephone" />
+
+    <TextView
+        android:id="@+id/retrievemessage"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievesubject" />
+
+    <TextView
+        android:id="@+id/tv_Names"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/retrieveTxtBox_layoutMarginTop"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievename"
+        app:layout_optimizationLevel="dimensions" />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/retrieveTxtBox_layoutMarginTop"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievemail" />
+
+    <TextView
+        android:id="@+id/tv_Phone"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="392dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg" />
+
+    <TextView
+        android:id="@+id/tv_Subject"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievesubject" />
+
+    <TextView
+        android:id="@+id/tv_Message"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/retrieveTxtBox_layoutMarginTop"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrievemessage" />
+
+    <Button
+        android:id="@+id/tvEdit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="EDIT"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message" />
+
+    <Button
+        android:id="@+id/tvDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="DELETE"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Message" />
+
+    <ImageView
+        android:id="@+id/home2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/apply2btn"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/apply2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/add2btn"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/add2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/help2btn"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/help2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile2btn"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg"
+        app:srcCompat="@drawable/unselected_help" />
+
+    <ImageView
+        android:id="@+id/profile2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg"
+        app:srcCompat="@drawable/selected_consultant" />
+
+    <TextView
+        android:id="@+id/tv_cusId"
+        android:layout_width="129dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="209dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inter4pg"
+        app:layout_constraintTop_toTopOf="@+id/inter4pg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
