@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity333">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/half_093528"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/myaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/aclonica"
+        android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    <Button
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:drawableLeft="@drawable/consultant"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Consultant"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aJob"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:drawableLeft="@drawable/profile"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/applyJob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myaccount"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/applyJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:drawableLeft="@drawable/applyjob"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Apply  Job"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/aJob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/aJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:drawableLeft="@drawable/addjob"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Add  Job"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/con"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applyJob"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/helpcen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#fff17a0a"
+        android:drawableLeft="@drawable/helpcenter"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Help Center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con"
+        app:layout_constraintVertical_bias="0.019"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/q2"
+        app:srcCompat="@drawable/selected_account" />
+
+    <ImageView
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b2"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/h2"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add2"
+        app:srcCompat="@drawable/unselected_helpdesk" />
+
+    <ImageView
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unselected_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

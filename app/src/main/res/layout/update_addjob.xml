@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity888"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="415dp"
+        android:layout_height="735dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/update"
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="417dp"
+        android:layout_height="405dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="415dp"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="143dp">
+
+
+            <TextView
+                android:id="@+id/caposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:foregroundGravity="center"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="Job Position"
+                android:textColor="#0D2ACA"
+                android:textColorHint="#090808"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/cacompanyadr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Company Address"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caacompanyadr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="DuplicateIds,MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caavacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/NOVACANCIES"
+                android:gravity="center"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/cavacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caCompanyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Company Name"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaCompanyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caMainREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Main Requirement"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaMainREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caAddREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Additional Requirement"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaAddREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caBasicSal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Basic Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaBasicSal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/caAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Allowance"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/caOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="OT Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caaOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/catott"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Total Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/caatott"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/cedit5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#FFFF8800"
+                android:fontFamily="@font/acme"
+                android:text="CONFIRM"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

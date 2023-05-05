@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/next"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity111">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/my_dimen"
+        android:layout_height="@dimen/my_dimen1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pp" />
+
+    <TextView
+        android:id="@+id/addJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/aclonica"
+        android:freezesText="false"
+        android:text="Add New Job"
+        android:textColor="@color/white"
+        android:textSize="@dimen/my_dimen2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView1"
+        app:layout_marginBaseline="@dimen/my_dimen3" />
+
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="536dp"
+        app:layout_constraintBottom_toTopOf="@+id/add1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="503dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="143dp">
+
+
+            <EditText
+                android:id="@+id/JobPosition"
+                android:layout_width="340dp"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginTop="@dimen/my_dimen6"
+                android:layout_marginEnd="@dimen/my_dimen6"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/JOBPOSITION"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/my_dimen8"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="DuplicateIds" />
+
+            <EditText
+                android:id="@+id/companyAddress"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/COMPANYADDRESS"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/my_dimen8"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+
+            <EditText
+                android:id="@+id/noVacncies"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/NOVACANCIES"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my_dimen8"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/COMPANYNAME"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my_dimen8"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <EditText
+                android:id="@+id/mainReq"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/MAINREQ"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/my_dimen8"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+
+            <EditText
+                android:id="@+id/addreq"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/ADREQ"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/my_dimen8"
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/basicsal"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/BASICSAL"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/allo"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/ALLOWANCE"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my_dimen8"
+
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/ot"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/OT"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my_dimen8"
+
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tottext"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/acme"
+                android:text="Total Salary"
+                android:textAlignment="center"
+
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="?android:attr/textColorHintInverse"
+                android:ems="10"
+                android:fontFamily="@font/acme"
+                android:freezesText="false"
+                android:gravity="center"
+                android:hint="@string/finaltot"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/my_dimen17"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my_dimen8"
+
+                app:layout_marginBaseline="@dimen/my_dimen9"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+
+            <Button
+                android:id="@+id/cancel2"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#fff17a0a"
+                android:fontFamily="@font/acme"
+                android:text="CANCEL"
+                android:textColor="@color/material_dynamic_neutral0"
+                android:textSize="@dimen/my_dimen17"
+
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/submit2"
+                android:layout_width="@dimen/my_dimen4"
+                android:layout_height="@dimen/my_dimen5"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#fff17a0a"
+                android:fontFamily="@font/acme"
+                android:text="SUBMIT"
+                android:textColor="@color/material_dynamic_neutral0"
+                android:textSize="@dimen/my_dimen19"
+
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_dimen3"
+        android:layout_marginBottom="@dimen/my_dimen3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:srcCompat="@drawable/selected_addjob" />
+
+    <ImageView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_dimen3"
+        android:layout_marginBottom="@dimen/my_dimen3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/q1"
+        app:srcCompat="@drawable/unselected_account" />
+
+    <ImageView
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_dimen3"
+        android:layout_marginBottom="@dimen/my_dimen3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/h1"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_dimen3"
+        android:layout_marginBottom="@dimen/my_dimen3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add1"
+        app:srcCompat="@drawable/unselected_helpdesk" />
+
+    <ImageView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_dimen3"
+        android:layout_marginBottom="@dimen/my_dimen3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unselected_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

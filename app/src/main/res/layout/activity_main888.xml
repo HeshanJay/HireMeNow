@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity888"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="415dp"
+        android:layout_height="735dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/added_jobs_080546"
+        tools:ignore="MissingConstraints"
+
+    />
+
+
+    <ScrollView
+        android:layout_width="417dp"
+        android:layout_height="405dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="415dp"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="143dp">
+
+            <TextView
+                android:id="@+id/ajobId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Record ID"
+                android:textColor="#0D2ACA"
+                android:textColorHint="#090808"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aajobId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/aposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:foregroundGravity="center"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="Job Position"
+                android:textColor="#0D2ACA"
+                android:textColorHint="#090808"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/acompanyadr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Company Address"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aacompanyadr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="DuplicateIds,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aavacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/NOVACANCIES"
+                android:gravity="center"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/avacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aCompanyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Company Name"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaCompanyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/aMainREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Main Requirement"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaMainREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/aAddREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Additional Requirement"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaAddREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/aBasicSal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Basic Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaBasicSal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/aAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Allowance"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/aOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="OT Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aaOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/atott"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Total Salary"
+                android:textColor="#0D2ACA"
+                android:textSize="28sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/aatott"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints"/>
+
+            <Button
+                android:id="@+id/edit5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+
+                android:background="@drawable/border"
+                android:backgroundTint="#FFFF8800"
+                android:fontFamily="@font/acme"
+                android:text="EDIT"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/delete5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#FFFF8800"
+                android:fontFamily="@font/acme"
+                android:text="DELETE"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/h7"
+        app:srcCompat="@drawable/unselected_applyjob" />
+
+    <ImageView
+        android:id="@+id/q7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add7"
+        app:srcCompat="@drawable/unselected_helpdesk"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/h7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unselected_home" />
+
+    <ImageView
+        android:id="@+id/add7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:srcCompat="@drawable/unselected_addjob" />
+
+    <ImageView
+        android:id="@+id/p7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/q7"
+        app:srcCompat="@drawable/selected_account" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
