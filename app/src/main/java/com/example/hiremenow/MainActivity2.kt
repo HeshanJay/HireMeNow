@@ -90,7 +90,7 @@ class MainActivity2 : AppCompatActivity() {
         tvSubject.text= intent.getStringExtra("customerSubject")
         tvMessage.text= intent.getStringExtra("customerMessage")
     }
-
+//update
     private fun openUpdateDialog(
         customerId: String,
         customerName:String
