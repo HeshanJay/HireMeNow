@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "343673942720",
+    "firebase_url": "https://hiremenow-1ff07-default-rtdb.firebaseio.com",
+    "project_id": "hiremenow-1ff07",
+    "storage_bucket": "hiremenow-1ff07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343673942720:android:dadf5b6578e0cd6d73f325",
+        "android_client_info": {
+          "package_name": "com.example.realtimedatabasekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343673942720-9mi26m804jn094pomols1bgmmk35qvml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcTJqK5lcBVDJlmtRPSyaFtnlcdm7AuRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343673942720-9mi26m804jn094pomols1bgmmk35qvml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

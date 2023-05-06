@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Consultant</string>
+    <string name="CONNAME">Name</string>
+    <string name="CONAGE">Age</string>
+    <string name="CONMOBILE">Mobile Number</string>
+    <string name="CONADDR">Address</string>
+    <string name="viewall">View All Details</string>
+    <string name="search">Search details</string>
+    <string name="delete">Delete Specific Details</string>
+    <string name="view">View Specific Appointment</string>
+    <string name="update">Update Specific Appointment</string>
+    <string name="cancel">CANCEL</string>
+
+
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgupdate"
+
+    tools:context=".UpdateData">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etnumber"
+            android:layout_width="360dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/input"
+            android:fontFamily="@font/acme"
+            android:hint="MobileNumber"
+            android:paddingLeft="20dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/ligtblue" />
+
+
+        <Button
+            android:id="@+id/readdataBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/btncolor"
+            android:text="Search "
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textSize="18dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input"
+            android:fontFamily="@font/acme"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/ligtblue"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textSize="18dp"
+            android:textColor="@color/purple_700"
+            android:fontFamily="@font/aclonica"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input"
+            android:fontFamily="@font/acme"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/ligtblue"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age :"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18dp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input"
+            android:fontFamily="@font/acme"
+            android:paddingLeft="18dp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:textColorHint="@color/ligtblue"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textSize="18dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
+
+<RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/date1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Sat 3 pm - 5 pm"
+                android:textColor="@color/purple_700"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/date2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Sun 3 pm - 5 pm"
+                android:textColor="@color/purple_700"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/date3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_weight="1"
+                android:text="Wed 4 pm - 6 pm"
+                android:textColor="@color/purple_700"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateDataBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/btncolor"
+                android:text="Update"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:text="Cancel"
+                android:backgroundTint="@color/btncolor"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                android:layout_marginRight="10dp"/>
+            android:layout_marginLeft="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/my_dimen3"
+                android:layout_marginBottom="@dimen/my_dimen3"
+                android:layout_weight="0.2"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/unselected_home" />
+
+            <ImageView
+                android:id="@+id/searchBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/my_dimen3"
+                android:layout_weight="0.2"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/unselected_applyjob" />
+
+            <ImageView
+                android:id="@+id/addBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/my_dimen3"
+                android:layout_marginBottom="@dimen/my_dimen3"
+                android:layout_weight="0.2"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/unselected_addjob" />
+
+
+            <ImageView
+                android:id="@+id/viewBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="0.2"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/unselected_helpdesk" />
+
+            <ImageView
+                android:id="@+id/updateBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="0.2"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/unselected_account" />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
