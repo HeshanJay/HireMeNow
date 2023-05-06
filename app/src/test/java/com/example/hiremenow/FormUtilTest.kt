@@ -1,11 +1,7 @@
 package com.example.hiremenow
-
-
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
-
 class FormUtilTest{
-
     @Test
     fun  `empty name returns false`(){
             val result = FormUtil.validateFormInput(

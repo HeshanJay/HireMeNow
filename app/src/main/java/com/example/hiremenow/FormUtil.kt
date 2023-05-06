@@ -13,7 +13,6 @@ object FormUtil {
      * the phone number contains less than 10 numbers
      */
 
-
     fun validateFormInput(
         name: String,
         email: String,
