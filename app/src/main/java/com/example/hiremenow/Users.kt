@@ -8,5 +8,5 @@ data class Users(
     var customerPhone:String?=null,
     var customerMessage:String?=null,
 
-
+//model class created for retrieve
 )

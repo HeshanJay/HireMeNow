@@ -1,5 +1,6 @@
 package com.example.hiremenow
 
+// pass data to the db
 data class CustomerModel (
     var customerId:String? = null,
     var customerName:String? = null,

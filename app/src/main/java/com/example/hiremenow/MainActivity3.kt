@@ -9,7 +9,7 @@ class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-
+//Redirect to MainActivity 2 by clicking button
         val myButton2 = findViewById<Button>(R.id.all1btn)
         myButton2.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)

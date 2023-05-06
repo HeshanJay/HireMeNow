@@ -19,7 +19,7 @@ class MainActivity13 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main13)
-
+        // Help button to navigate to the main activity
         val helpButton: ImageView = findViewById(R.id.help33btn)
         helpButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -27,13 +27,14 @@ class MainActivity13 : AppCompatActivity() {
         }
 
 
-
+// RecyclerView to display the list of customers
         recyclerView = findViewById(R.id.recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(this )
 
         usersArrayList = arrayListOf()
-
+        // Firebase database reference for the "Customers" node
         database = FirebaseDatabase.getInstance().getReference("Customers")
+        // ValueEventListener to retrieve customer data from the database
         database.addValueEventListener(object:ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 if(snapshot.exists()){
@@ -43,13 +44,14 @@ class MainActivity13 : AppCompatActivity() {
                             usersArrayList.add(user!!)
                         }
                     }
+                    // Set up the RecyclerView adapter with the retrieved customer data
                     val mAdaptor= MyAdapter(usersArrayList)
                     recyclerView.adapter = mAdaptor
-
+                    // Set click listener for each item in the RecyclerView
                     mAdaptor.setOnItemClickListener(object:MyAdapter.OnItemClickListener{
                         override fun onItemClick(position: Int) {
                            val intent = Intent(this@MainActivity13,MainActivity2::class.java)
-                            //put extras
+                            //put extras to pass customer data to MainActivity2
                             intent.putExtra("customerId",usersArrayList[position].customerId)
                             intent.putExtra("customerName",usersArrayList[position].customerName)
                             intent.putExtra("customerEmail",usersArrayList[position].customerEmail)
@@ -68,6 +70,7 @@ class MainActivity13 : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
+                // Display error message if the ValueEventListener was cancelled
                 Toast.makeText(this@MainActivity13,error.toString(), Toast.LENGTH_SHORT).show()
             }
         })

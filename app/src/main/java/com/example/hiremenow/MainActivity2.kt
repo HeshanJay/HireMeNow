@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity2 : AppCompatActivity() {
+    // declaring private variables for TextViews, Buttons, and ImageView
     private lateinit var tvcusId:TextView
     private lateinit var tvNames:TextView
     private lateinit var tvEmail:TextView
@@ -24,23 +25,24 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-
+// initialize ImageView and set a click listener to go to the MainActivity
         val help2btn = findViewById<ImageView>(R.id.help2btn)
         help2btn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-
+        // initialize Delete button and set a click listener to go to the MainActivity6
         val myButton2 = findViewById<Button>(R.id.tvDelete)
         myButton2.setOnClickListener {
             val intent = Intent(this, MainActivity6::class.java)
             startActivity(intent)
         }
-
+        // initialize views
         initView()
+        // set values to the views
         setValuesToViews()
-
+        // set click listeners for Edit and Delete buttons
         tvEdit.setOnClickListener{
             openUpdateDialog(
                 intent.getStringExtra("customerId").toString(),
@@ -57,9 +59,11 @@ class MainActivity2 : AppCompatActivity() {
     private fun deleteRecord(
         id: String
     ){
+    // get reference to the database
         val dbRef = FirebaseDatabase.getInstance().getReference("Customers").child(id)
+    // remove the value from the database
         val mTask = dbRef.removeValue()
-
+    // add success and failure listeners
         mTask.addOnSuccessListener {
             Toast.makeText(this ,"Your data deleted",Toast.LENGTH_LONG).show()
             val intent = Intent(this,MainActivity13::class.java)
@@ -70,7 +74,7 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-
+    // function to initialize views
     private fun initView() {
         tvcusId=findViewById(R.id.tv_cusId)
         tvNames = findViewById(R.id.tv_Names)
@@ -81,7 +85,7 @@ class MainActivity2 : AppCompatActivity() {
         tvEdit = findViewById(R.id.tvEdit)
         tvDelete = findViewById(R.id.tvDelete)
     }
-
+    // function to set values to views
     private fun setValuesToViews(){
         tvcusId.text= intent.getStringExtra("customerId")
         tvNames.text= intent.getStringExtra("customerName")
@@ -90,7 +94,7 @@ class MainActivity2 : AppCompatActivity() {
         tvSubject.text= intent.getStringExtra("customerSubject")
         tvMessage.text= intent.getStringExtra("customerMessage")
     }
-//update
+    // function to open update dialog
     private fun openUpdateDialog(
         customerId: String,
         customerName:String
@@ -100,26 +104,26 @@ class MainActivity2 : AppCompatActivity() {
         val mDialogView = inflater.inflate(R.layout.activity_main5,null)
 
         mDialog.setView(mDialogView)
-
+// initialize EditText views for customer data
         val etName = mDialogView.findViewById<EditText>(R.id.etName)
         val etEmail = mDialogView.findViewById<EditText>(R.id.etEmail)
         val etPhone = mDialogView.findViewById<EditText>(R.id.etPhone)
         val etSubject = mDialogView.findViewById<EditText>(R.id.etSubject)
         val etMessage = mDialogView.findViewById<EditText>(R.id.etMessage)
-
+// initialize update button
         val updateconfirm = mDialogView.findViewById<Button>(R.id.updateconfirm)
-
+// set current customer data to EditText views
         etName.setText( intent.getStringExtra("customerName").toString())
         etEmail.setText( intent.getStringExtra("customerEmail").toString())
         etPhone.setText( intent.getStringExtra("customerPhone").toString())
         etSubject.setText( intent.getStringExtra("customerSubject").toString())
         etMessage.setText( intent.getStringExtra("customerMessage").toString())
-
+// set dialog title with customer name
         mDialog.setTitle("Updating $customerName Record")
-
+// set update button click listener
         val alertDialog = mDialog.create()
         alertDialog.show()
-
+// update the customer data in the database
         updateconfirm.setOnClickListener {
             updateCusData(
                 customerId,
@@ -129,10 +133,11 @@ class MainActivity2 : AppCompatActivity() {
                 etSubject.text.toString(),
                 etMessage.text.toString()
             )
-
+// show a toast message to indicate data has been updated
             Toast.makeText(applicationContext,"Your Data Updated",Toast.LENGTH_LONG).show()
 
             //we wre setting the updated data to our textviews
+            // update the text views with the new data
             tvNames.text= etName.text.toString()
             tvEmail.text= etEmail.text.toString()
             tvPhone.text=  etPhone.text.toString()
