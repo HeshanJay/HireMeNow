@@ -50,7 +50,7 @@ class MainActivity444 : AppCompatActivity() {
                     mAdapter.setOnItemClickListener(object : addjob_Addapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
 
-                           val intent = Intent(this@MainActivity444, MainActivity888::class.java)
+                            val intent = Intent(this@MainActivity444, MainActivity888::class.java)
 
                             //put extras
                             intent.putExtra("jobId",retrive_jobArrayList[position].jobId)
@@ -59,11 +59,12 @@ class MainActivity444 : AppCompatActivity() {
                             intent.putExtra("comName",retrive_jobArrayList[position].comName)
                             intent.putExtra("basicSal",retrive_jobArrayList[position].basicSal)
                             intent.putExtra("allowance",retrive_jobArrayList[position].allowance)
-                            intent.putExtra("addree",retrive_jobArrayList[position].addree)
                             intent.putExtra("main",retrive_jobArrayList[position].main)
                             intent.putExtra("addi",retrive_jobArrayList[position].addi)
                             intent.putExtra("ot",retrive_jobArrayList[position].ot)
                             intent.putExtra("vacasis",retrive_jobArrayList[position].vacasis)
+                            intent.putExtra("tot",retrive_jobArrayList[position].tot)
+
                             startActivity( intent)
 
                         }

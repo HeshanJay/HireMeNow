@@ -255,11 +255,11 @@
                 android:text="Total Salary"
                 android:textAlignment="center"
 
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 tools:ignore="MissingConstraints" />
 
-            <EditText
+            <TextView
                 android:id="@+id/amount"
                 android:layout_width="@dimen/my_dimen4"
                 android:layout_height="@dimen/my_dimen5"
@@ -270,7 +270,6 @@
                 android:fontFamily="@font/acme"
                 android:freezesText="false"
                 android:gravity="center"
-                android:hint="@string/finaltot"
                 android:inputType="textPersonName"
                 android:minHeight="@dimen/my_dimen17"
                 android:textColor="@color/black"

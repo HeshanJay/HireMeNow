@@ -51,7 +51,7 @@
                 android:text="Job Position"
                 android:textColor="#0D2ACA"
                 android:textColorHint="#090808"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -63,8 +63,33 @@
                 android:gravity="center"
 
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+            <TextView
+                android:id="@+id/caavacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/NOVACANCIES"
+                android:textColor="#0D2ACA"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/cavacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
 
             <TextView
                 android:id="@+id/cacompanyadr"
@@ -76,7 +101,7 @@
                 android:gravity="center"
                 android:text="Company Address"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -87,31 +112,9 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="DuplicateIds,MissingConstraints,SpeakableTextPresentCheck" />
 
-            <TextView
-                android:id="@+id/caavacancy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:fontFamily="@font/aclonica"
-                android:text="@string/NOVACANCIES"
-                android:gravity="center"
-                android:textColor="#0D2ACA"
-                android:textSize="28sp"
-                tools:ignore="MissingConstraints" />
-
-            <EditText
-                android:id="@+id/cavacancy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/acme"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/caCompanyname"
@@ -122,7 +125,7 @@
                 android:gravity="center"
                 android:text="Company Name"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -133,7 +136,7 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
@@ -145,7 +148,7 @@
                 android:gravity="center"
                 android:text="Main Requirement"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -156,7 +159,7 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
@@ -168,7 +171,7 @@
                 android:gravity="center"
                 android:text="Additional Requirement"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -179,7 +182,7 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
@@ -191,7 +194,7 @@
                 android:gravity="center"
                 android:text="Basic Salary"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -202,7 +205,7 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
@@ -214,7 +217,7 @@
                 android:gravity="center"
                 android:text="Allowance"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -225,8 +228,8 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
-                tools:ignore="MissingConstraints"/>
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/caOT"
@@ -237,7 +240,7 @@
                 android:gravity="center"
                 android:text="OT Salary"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -248,8 +251,8 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="28sp"
-                tools:ignore="MissingConstraints"/>
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/catott"
@@ -260,10 +263,10 @@
                 android:gravity="center"
                 android:text="Total Salary"
                 android:textColor="#0D2ACA"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 tools:ignore="MissingConstraints" />
 
-            <EditText
+            <TextView
                 android:id="@+id/caatott"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -272,7 +275,7 @@
                 android:fontFamily="@font/acme"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="35sp"
+                android:textSize="28sp"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <Button

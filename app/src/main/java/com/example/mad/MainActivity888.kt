@@ -23,6 +23,7 @@ class MainActivity888 : AppCompatActivity() {
     private lateinit var bbaddi :TextView
     private lateinit var bbaot :TextView
     private lateinit var bbvacasis :TextView
+    private lateinit var bbtot :TextView
     private lateinit var bbbbtn1 :Button
     private lateinit var bbbtn2 :Button
 
@@ -43,8 +44,10 @@ class MainActivity888 : AppCompatActivity() {
         bbbbtn1.setOnClickListener {  //for submit button operations
             openUpdateDialog(
                 intent.getStringExtra("jobId").toString(),
-                intent.getStringExtra("comName").toString()
-            )
+                intent.getStringExtra("comName").toString(),
+                intent.getStringExtra("tot").toString()
+
+                )
         }
 
         bbbtn2.setOnClickListener { //for delete button operations
@@ -85,6 +88,7 @@ class MainActivity888 : AppCompatActivity() {
         bbaddree = findViewById(R.id.aacompanyadr)
         bbaot = findViewById(R.id.aaOT)
         bbvacasis = findViewById(R.id.avacancy)
+        bbtot = findViewById(R.id.aatott)
         bbbbtn1 = findViewById(R.id.edit5)
         bbbtn2 = findViewById(R.id.delete5)
 
@@ -102,13 +106,15 @@ class MainActivity888 : AppCompatActivity() {
         bbaddree.text = intent.getStringExtra("addree")
         bbaot.text = intent.getStringExtra("ot")
         bbvacasis.text = intent.getStringExtra("vacasis")
+        bbtot.text = intent.getStringExtra("tot")
 
     }
 
 
     private fun openUpdateDialog(
-        jobId :String,
-        comName : String
+        jobId: String,
+        comName: String,
+        tot: String
     ) {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
@@ -140,6 +146,7 @@ class MainActivity888 : AppCompatActivity() {
         cBasicSal.setText(intent.getStringExtra("basicSal").toString())
         cAllowance.setText(intent.getStringExtra("allowance").toString())
         cOT.setText(intent.getStringExtra("ot").toString())
+//        ctotal.setText(intent.getStringExtra("tot").toString())
 
         mDialog.setTitle("Updating $comName Record")
 
@@ -147,6 +154,7 @@ class MainActivity888 : AppCompatActivity() {
         alertDialog.show()
 
         btnConfirm.setOnClickListener {
+
 
             updateJobData(
                 jobId,
@@ -158,7 +166,10 @@ class MainActivity888 : AppCompatActivity() {
                 cAddReq.text.toString(),
                 cBasicSal.text.toString(),
                 cAllowance.text.toString(),
-                cOT.text.toString()
+                cOT.text.toString(),
+//                ctotal.text.toString()
+                tot
+
             )
 
             Toast.makeText(applicationContext, " The Job Data Updated.",Toast.LENGTH_LONG).show()
@@ -174,14 +185,14 @@ class MainActivity888 : AppCompatActivity() {
             bbaddree.text = cCompanyAddress.text.toString()
             bbaot.text = cOT.text.toString()
             bbvacasis.text = cVacancy.text.toString()
-
+//            bbtot.text =ctotal.text.toString()
             alertDialog.dismiss()
         }
 
     }
 
     private fun updateJobData(
-        id:String,
+        id: String,
         CompanyName: String,
         Possition: String,
         MainReq: String,
@@ -190,10 +201,11 @@ class MainActivity888 : AppCompatActivity() {
         Allowance: String,
         Address: String,
         OT: String,
-        Vacancies: String
+        Vacancies: String,
+        Vtot: String
     ){
         val dbRef = FirebaseDatabase.getInstance().getReference("Add_Job").child(id)
-        val jobInfo = addJobModel(id,CompanyName,Possition,MainReq,AddiReq,Basic,Allowance,Address,OT,Vacancies)
+        val jobInfo = addJobModel(id,CompanyName,Possition,MainReq,AddiReq,Basic,Allowance,Address,OT,Vacancies,Vtot)
         dbRef.setValue(jobInfo)
     }
 

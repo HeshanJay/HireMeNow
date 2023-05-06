@@ -18,6 +18,7 @@ class MainActivity333 : AppCompatActivity() {
 
         }
 
+
         val NEXT1 = findViewById<Button>(R.id.aJob)
         NEXT1.setOnClickListener {
             val intent = Intent(this, MainActivity444::class.java)

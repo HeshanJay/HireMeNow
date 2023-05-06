@@ -10,5 +10,6 @@ data class retrive_job(
     var addree: String?=null,
     var addi: String?=null,
     var ot: String?=null,
-    var vacasis: String?=null
-    )
+    var vacasis: String?=null,
+    var tot: String?=null
+)

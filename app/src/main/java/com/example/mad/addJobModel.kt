@@ -10,5 +10,6 @@ data class addJobModel(
     var Addi: String? = null,
     var BasicSal: String? = null,
     var Allowance: String? = null,
-    var Ot: String? = null
+    var Ot: String? = null,
+    var tot: String? = null
 )
