@@ -1,6 +1,6 @@
 package com.example.mad
 
-data class addJobModel(
+data class addJobModel(                 // models for defining types for retriving data
     var jobId: String? = null,
     var Possition: String? = null,
     var Addree: String? = null,

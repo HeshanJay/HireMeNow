@@ -20,7 +20,7 @@ class addjob_Addapter ( val userList : ArrayList<retrive_job>) : RecyclerView.Ad
     }
 
     class MyViewHolder(itemView : View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
-        val ComName : TextView = itemView.findViewById(R.id.comnama)
+        val ComName : TextView = itemView.findViewById(R.id.comnama)  //records card displaying things
         val POssition : TextView = itemView.findViewById(R.id.posnama)
         val Main : TextView = itemView.findViewById(R.id.mreq)
 

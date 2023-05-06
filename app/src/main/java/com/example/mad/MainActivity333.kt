@@ -11,7 +11,7 @@ class MainActivity333 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main333)
 
-        val NEXT = findViewById<ImageView>(R.id.add2)
+        val NEXT = findViewById<ImageView>(R.id.add2)       //image view uses as a button for navigation
         NEXT.setOnClickListener {
             val intent = Intent(this, MainActivity111::class.java)
             startActivity(intent)
@@ -19,7 +19,7 @@ class MainActivity333 : AppCompatActivity() {
         }
 
 
-        val NEXT1 = findViewById<Button>(R.id.aJob)
+        val NEXT1 = findViewById<Button>(R.id.aJob)         //button for navigation
         NEXT1.setOnClickListener {
             val intent = Intent(this, MainActivity444::class.java)
             startActivity(intent)

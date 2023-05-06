@@ -15,7 +15,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity111 : AppCompatActivity() {
-
+                                                     //defining variables acording to input types
     private lateinit var jobPossi :EditText
     private lateinit var commAddre :EditText
     private lateinit var noofVac :EditText
@@ -29,10 +29,10 @@ class MainActivity111 : AppCompatActivity() {
     private lateinit var totAmount :TextView
     private lateinit var cancel1 :Button
     private lateinit var submit1 :Button
-    private lateinit var profile1 : ImageView
+    private lateinit var profile1 : ImageView   //for vector assets
 
 
-    private lateinit var dbRef: DatabaseReference
+    private lateinit var dbRef: DatabaseReference  //database reference
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class MainActivity111 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main111)
 
-        jobPossi = findViewById(R.id.JobPosition)
+        jobPossi = findViewById(R.id.JobPosition)     //mentioning the variables for perticular id's
         commAddre = findViewById(R.id.companyAddress)
         noofVac = findViewById(R.id.noVacncies)
         commName = findViewById(R.id.companyName)
@@ -56,18 +56,14 @@ class MainActivity111 : AppCompatActivity() {
 
         profile1 = findViewById(R.id.p1)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Add_Job")
+        dbRef = FirebaseDatabase.getInstance().getReference("Add_Job") //database mentioning
 
         submit1.setOnClickListener {
-            saveAddJob()
-//
-//                val intent = Intent(this, MainActivity3::class.java)
-//                startActivity(intent)
-
+            saveAddJob()                     // save the data according to on click listner
         }
 
         profile1.setOnClickListener {
-            val intent = Intent(this, MainActivity333::class.java)
+            val intent = Intent(this, MainActivity333::class.java) // where to goes after submitting
             startActivity(intent)}
 
 
@@ -78,7 +74,7 @@ class MainActivity111 : AppCompatActivity() {
         val Possition = jobPossi.text.toString()
         val Addree= commAddre.text.toString()
         val Vacasis = noofVac.text.toString()
-        val ComName = commName.text.toString()
+        val ComName = commName.text.toString()                //defining the types
         val Main = mainReq.text.toString()
         val Addi = addiReq.text.toString()
         val BasicSal = basicSal.text.toString()
@@ -86,15 +82,16 @@ class MainActivity111 : AppCompatActivity() {
         val Ot = otSal.text.toString()
 
 // Check if Vacasis is a valid integer
-        val isVacasisValid = Vacasis.toIntOrNull() != null
+        val isVacasisValid = Vacasis.toIntOrNull() != null    //validations to wrappers
         if (!isVacasisValid) {
             // Show error message to the user and prevent form submission
             Toast.makeText(this, "Please enter a valid number for the number of vacancies.", Toast.LENGTH_SHORT).show()
             return
+                                //toast messeges
         }
 
 // Check if BasicSal, Allowance, and Ot are valid numbers (integers or floats)
-        val isBasicSalValid = BasicSal.toFloatOrNull() != null
+        val isBasicSalValid = BasicSal.toFloatOrNull() != null                  //validations to wrappers
         val isAllowanceValid = Allowance.toFloatOrNull() != null
         val isOtValid = Ot.toFloatOrNull() != null
         if (!isBasicSalValid || !isAllowanceValid || !isOtValid) {
@@ -107,11 +104,11 @@ class MainActivity111 : AppCompatActivity() {
 
 
 // All input is valid, calculate total salary
-        val tot = (BasicSal.toFloat() * Allowance.toFloat() * Ot.toFloat()).toString()
+        val tot = (BasicSal.toFloat() * Allowance.toFloat() * Ot.toFloat()).toString() //calculation function
+                                                                                       //convert strings to number and floting then do the calculation and find value
 
 
-
-        if(Possition.isEmpty()){
+        if(Possition.isEmpty()){                           //if fields not filled
             jobPossi.error = " Please enter possition"
         }
         if(Addree.isEmpty()){
@@ -141,7 +138,7 @@ class MainActivity111 : AppCompatActivity() {
 
         val jobId = dbRef.push().key!!
 
-        val addJob = addJobModel(jobId, Possition, Addree, Vacasis, ComName, Main, Addi, BasicSal, Allowance, Ot ,tot)
+        val addJob = addJobModel(jobId, Possition, Addree, Vacasis, ComName, Main, Addi, BasicSal, Allowance, Ot ,tot) // crete object
 
         dbRef.child(jobId).setValue(addJob)
             .addOnCompleteListener {
@@ -151,14 +148,14 @@ class MainActivity111 : AppCompatActivity() {
                 commAddre.text.clear()
                 noofVac.text.clear()
                 commName.text.clear()
-                mainReq.text.clear()
+                mainReq.text.clear()          // clear the form when a data record passed
                 addiReq.text.clear()
                 basicSal.text.clear()
                 allowance.text.clear()
                 otSal.text.clear()
 
             }.addOnFailureListener{err ->
-                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show() //toast error messege
 
 
             }
