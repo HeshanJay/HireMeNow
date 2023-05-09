@@ -204,12 +204,13 @@
         android:id="@+id/linearLayoutCompat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="20dp"
         android:gravity="center|bottom"
         android:orientation="horizontal"
         android:weightSum="1"
-        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
@@ -220,17 +221,18 @@
             android:layout_marginStart="@dimen/my_dimen3"
             android:layout_marginBottom="@dimen/my_dimen3"
             android:layout_weight="0.2"
-             app:tint="@color/black"
-            app:srcCompat="@drawable/unselected_home" />
+            app:srcCompat="@drawable/unselected_home"
+            app:tint="@color/black" />
 
         <ImageView
+            android:layout_marginLeft="20dp"
             android:id="@+id/searchBtn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="@dimen/my_dimen3"
             android:layout_weight="0.2"
-            app:tint="@color/black"
-            app:srcCompat="@drawable/unselected_applyjob" />
+            app:srcCompat="@drawable/unselected_applyjob"
+            app:tint="@color/black" />
 
         <ImageView
             android:id="@+id/addBtn"
@@ -239,8 +241,8 @@
             android:layout_marginStart="@dimen/my_dimen3"
             android:layout_marginBottom="@dimen/my_dimen3"
             android:layout_weight="0.2"
-            app:tint="@color/black"
-            app:srcCompat="@drawable/unselected_addjob" />
+            app:srcCompat="@drawable/unselected_addjob"
+            app:tint="@color/black" />
 
 
         <ImageView
@@ -250,8 +252,8 @@
             android:layout_marginStart="28dp"
             android:layout_marginBottom="32dp"
             android:layout_weight="0.2"
-            app:tint="@color/black"
-            app:srcCompat="@drawable/unselected_helpdesk" />
+            app:srcCompat="@drawable/unselected_helpdesk"
+            app:tint="@color/black" />
 
         <ImageView
             android:id="@+id/updateBtn"
@@ -260,8 +262,8 @@
             android:layout_marginStart="28dp"
             android:layout_marginBottom="32dp"
             android:layout_weight="0.2"
-            app:tint="@color/black"
-            app:srcCompat="@drawable/unselected_account" />
+            app:srcCompat="@drawable/unselected_account"
+            app:tint="@color/black" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

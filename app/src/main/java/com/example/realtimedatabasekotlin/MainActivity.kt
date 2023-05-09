@@ -56,19 +56,36 @@ class MainActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Consultants")
             val User = User(name, number, age, address, date)
 
-            database.child(number).setValue(User).addOnSuccessListener {
+            if(name.isEmpty() || number.isEmpty() || age.isEmpty() || address.isEmpty() || date.isEmpty()){
 
-                val intent = Intent(this@MainActivity, ReadData::class.java)
-                intent.putExtra("number", number)
-                startActivity(intent)
-                Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
-
-            }.addOnFailureListener {
-
-                Toast.makeText(this, "Failed to save", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(this@MainActivity,"All Field Must Be Requires",Toast.LENGTH_SHORT).show()
 
             }
+            else if (number.length!=10){
+                Toast.makeText(this@MainActivity,"Invalid Number",Toast.LENGTH_SHORT).show()
+
+            }
+            else if(age.length>2){
+                Toast.makeText(this@MainActivity,"Invalid Age",Toast.LENGTH_SHORT).show()
+            }
+
+            else{
+                database.child(number).setValue(User).addOnSuccessListener {
+
+                    val intent = Intent(this@MainActivity, ReadData::class.java)
+                    intent.putExtra("number", number)
+                    startActivity(intent)
+                    Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
+
+                }.addOnFailureListener {
+
+                    Toast.makeText(this, "Failed to save", Toast.LENGTH_SHORT).show()
+
+
+                }
+
+            }
+
 
 
         }

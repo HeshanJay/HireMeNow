@@ -197,6 +197,7 @@
                 app:srcCompat="@drawable/unselected_home" />
 
             <ImageView
+                android:layout_marginLeft="20dp"
                 android:id="@+id/searchBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
