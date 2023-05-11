@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Applyjobform">
+
+    <ImageView
+        android:id="@+id/backimg3"
+        android:layout_width="443dp"
+        android:layout_height="747dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back2" />
+
+    <TextView
+        android:id="@+id/app_title3"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Application"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/companyNjobtitle"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/CompanyNameandtheJobTitle"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title3" />
+
+    <EditText
+        android:id="@+id/cus_email"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/EMAIL"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cus_name" />
+
+    <EditText
+        android:id="@+id/cus_name"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/FULLNAME"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyNjobtitle" />
+
+    <EditText
+        android:id="@+id/cs_resume"
+        android:layout_width="343dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="No file chosen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cus_phone" />
+
+    <EditText
+        android:id="@+id/cus_phone"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="@string/CONTACTNUMBER"
+        android:inputType="phone"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cus_email" />
+
+    <ImageView
+        android:id="@+id/pdf_img1"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/cs_resume"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/cs_resume"
+        app:layout_constraintTop_toTopOf="@+id/cs_resume"
+        app:srcCompat="@drawable/pdf_upload_img" />
+
+    <Button
+        android:id="@+id/cv_upload"
+        android:layout_width="155dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+        android:text="Upload Resume"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cs_resume" />
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_upload" />
+
+    <Button
+        android:id="@+id/cancel2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+        android:text="CANCEL"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/submit1"
+        app:layout_constraintTop_toBottomOf="@+id/cv_upload" />
+
+    <ImageView
+        android:id="@+id/home_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyjob_icon3"
+        app:srcCompat="@drawable/unselect_home" />
+
+    <ImageView
+        android:id="@+id/applyjob_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addjob_icon3"
+        app:srcCompat="@drawable/select_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon3"
+        app:srcCompat="@drawable/unselect_addjob" />
+
+    <ImageView
+        android:id="@+id/help_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_icon3"
+        app:srcCompat="@drawable/unselect_help" />
+
+    <ImageView
+        android:id="@+id/profile_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/unselect_profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

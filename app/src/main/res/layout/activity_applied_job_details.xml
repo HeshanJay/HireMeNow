@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppliedJob_details">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="435dp"
+        android:layout_height="745dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retrieveback" />
+
+    <TextView
+        android:id="@+id/retrieveJobtitle"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="244dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Company Name and Job Title"
+        android:textColor="#0D2ACA"
+        android:textColorHint="#090808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/retrieveFname"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Full Name"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/retrieveEmail"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrieveFname" />
+
+    <TextView
+        android:id="@+id/retrievePhone"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Contact Number"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Email" />
+
+    <TextView
+        android:id="@+id/retrievepdf"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Resume"
+        android:textColor="#0D2ACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Email" />
+
+    <TextView
+        android:id="@+id/tv_Phone"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retrievePhone" />
+
+    <TextView
+        android:id="@+id/tv_Fname"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="338dp"
+        android:fontFamily="@font/acme"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tv_Jobtitle"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retrieveJobtitle" />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retrieveEmail" />
+
+    <TextView
+        android:id="@+id/tv_pdf"
+        android:layout_width="403dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retrievePhone" />
+
+    <Button
+        android:id="@+id/tvEdit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="EDIT"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Phone" />
+
+    <Button
+        android:id="@+id/tvDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="DELETE"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Phone" />
+
+    <ImageView
+        android:id="@+id/home_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyjob_icon3"
+        app:srcCompat="@drawable/unselect_home" />
+
+    <ImageView
+        android:id="@+id/applyjob_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addjob_icon3"
+        app:srcCompat="@drawable/unselect_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon3"
+        app:srcCompat="@drawable/unselect_addjob" />
+
+    <ImageView
+        android:id="@+id/help_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_icon3"
+        app:srcCompat="@drawable/unselect_help" />
+
+    <ImageView
+        android:id="@+id/profile_icon3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/select_profile" />
+
+    <TextView
+        android:id="@+id/tv_jsid"
+        android:layout_width="63dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/retrieveJobtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

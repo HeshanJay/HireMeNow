@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backimg1"
+        android:layout_width="425dp"
+        android:layout_height="761dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/app_title1"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Available Jobs "
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/available_job1"
+        android:layout_width="377dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:ems="10"
+        android:gravity="center"
+        android:fontFamily="@font/acme"
+        android:inputType="textMultiLine"
+        android:text="Trainee ICT Officer \nMcConachie Stedman \n18d ago \nToowoomba, Toowoomba &amp; Darling Downs QLD"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title1" />
+
+    <Button
+        android:id="@+id/moreD_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="More Details "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/available_job1" />
+
+    <TextView
+        android:id="@+id/available_job2"
+        android:layout_width="381dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text="ICT Systems Administrator \nDarling Downs Hospital and Health Service \n2d ago \nToowoomba South, Toowoomba and Darling Downs QLD"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreD_btn1" />
+
+    <Button
+        android:id="@+id/moreD_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/acme"
+        android:text="More Details "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/available_job2" />
+
+    <ImageView
+        android:id="@+id/home_icon1"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyjob_icon1"
+        app:srcCompat="@drawable/unselect_home" />
+
+    <ImageView
+        android:id="@+id/applyjob_icon1"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addjob_icon1"
+        app:srcCompat="@drawable/select_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob_icon1"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon1"
+        app:srcCompat="@drawable/unselect_addjob" />
+
+    <ImageView
+        android:id="@+id/help_icon1"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_icon1"
+        app:srcCompat="@drawable/unselect_help" />
+
+    <ImageView
+        android:id="@+id/profile_icon1"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/unselect_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

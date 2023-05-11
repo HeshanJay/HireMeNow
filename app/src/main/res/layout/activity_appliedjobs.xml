@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appliedjobs">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="453dp"
+        android:layout_height="773dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Applied Jobs"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="407dp"
+        android:layout_height="424dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:listitem="@layout/list_itemap" />
+
+    <ImageView
+        android:id="@+id/home_icon6"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyjob_icon6"
+        app:srcCompat="@drawable/unselect_home" />
+
+    <ImageView
+        android:id="@+id/applyjob_icon6"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addjob_icon6"
+        app:srcCompat="@drawable/unselect_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob_icon6"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon6"
+        app:srcCompat="@drawable/unselect_addjob" />
+
+    <ImageView
+        android:id="@+id/help_icon6"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_icon6"
+        app:srcCompat="@drawable/unselect_help" />
+
+    <ImageView
+        android:id="@+id/profile_icon6"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/select_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

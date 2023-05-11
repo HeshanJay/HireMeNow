@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HireMeNow_job</string>
+    <string name="CompanyNameandtheJobTitle" translatable="false">Company Name and Job Title</string>
+    <string name="FULLNAME" translatable="false">Full Name</string>
+    <string name="EMAIL" translatable="false">Email</string>
+    <string name="CONTACTNUMBER" translatable="false">Contact Number</string>
+</resources>

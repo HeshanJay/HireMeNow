@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobdescription">
+
+    <ImageView
+        android:id="@+id/backimg2"
+        android:layout_width="434dp"
+        android:layout_height="753dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/app_title2"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Trainee ICT Officer"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedjob_title1"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="McConachie Stedman"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title2" />
+
+    <TextView
+        android:id="@+id/selectedjob_des1"
+        android:layout_width="383dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Toowooba, Toowoomba &amp; Darling \nDowns QLD Help Desk &amp; IT Support
+                     (Information Communication \nTechnology)
+        \nFull time \nAbout the role: \nWe currently have a position available for an enthusiastic
+  Trainee ICT officer to join our team"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedjob_title1" />
+
+    <Button
+        android:id="@+id/cancel_btn1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+        android:text="CANCEL"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/apply_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedjob_des1" />
+
+    <Button
+        android:id="@+id/apply_btn1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/border"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:fontFamily="@font/acme"
+        android:text="APPLY"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedjob_des1" />
+
+    <ImageView
+        android:id="@+id/home_icon2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyjob_icon2"
+        app:srcCompat="@drawable/unselect_home" />
+
+    <ImageView
+        android:id="@+id/applyjob_icon2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addjob_icon2"
+        app:srcCompat="@drawable/select_applyjob" />
+
+    <ImageView
+        android:id="@+id/addjob_icon2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon2"
+        app:srcCompat="@drawable/unselect_addjob" />
+
+    <ImageView
+        android:id="@+id/help_icon2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_icon2"
+        app:srcCompat="@drawable/unselect_help" />
+
+    <ImageView
+        android:id="@+id/profile_icon2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/unselect_profile" />
+</androidx.constraintlayout.widget.ConstraintLayout>
