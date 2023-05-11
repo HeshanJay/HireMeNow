@@ -31,7 +31,6 @@ class Applyjobform : AppCompatActivity() {
     lateinit var uri : Uri
     lateinit var mStorage : StorageReference
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_applyjobform)
@@ -87,6 +86,12 @@ class Applyjobform : AppCompatActivity() {
         }
     }
 
+    /**
+     * Extracts the file name from the given URI.
+     *
+     * @param uri The URI of the selected file.
+     * @return The file name.
+     */
     private fun getFileName(uri: Uri): String {
         var result = ""
 
@@ -108,48 +113,10 @@ class Applyjobform : AppCompatActivity() {
         return result
     }
 
+    /**
+     * Saves the form data and uploaded file URI to the database.
+     *
+     * @param uri The URI of the uploaded file.
+     */
     private fun saveDataToDatabase(uri: Uri) {
-        val fileName = getFileName(uri)
-        val reference = mStorage.child(fileName)
-
-        reference.putFile(uri).addOnSuccessListener {
-            Toast.makeText(this, "Data saved successfully!", Toast.LENGTH_SHORT).show()
-
-            // Save the file name in the Job Seekers node
-            val jsId = dbRef.push().key!!
-            //getting values
-            val companyNamenJobTitle = cnjobtitle.text.toString()
-            val jsName = us_name.text.toString()
-            val jsEmail = us_email.text.toString()
-            val jsPhone = us_phone.text.toString()
-
-            if (companyNamenJobTitle.isEmpty()) {
-                cnjobtitle.error = "Please enter company name and the job title"
-            }
-            if (jsName.isEmpty()) {
-                us_name.error = "Please enter name"
-            }
-            if (jsEmail.isEmpty()) {
-                us_email.error = "Please enter email"
-            }
-            if (jsPhone.isEmpty()) {
-                us_phone.error = "Please enter contact number"
-            }
-
-            val jobseeker = JobseekerModel(jsId, companyNamenJobTitle, jsName, jsEmail, jsPhone)
-
-            jobseeker.fileName = fileName
-            dbRef.child(jsId).setValue(jobseeker)
-
-            // Clear all the fields
-            cnjobtitle.text.clear()
-            us_name.text.clear()
-            us_email.text.clear()
-            us_phone.text.clear()
-            findViewById<TextView>(R.id.cs_resume).text = ""
-
-        }.addOnFailureListener { exception ->
-            Toast.makeText(this, "Error: ${exception.message}", Toast.LENGTH_SHORT).show()
-        }
-    }
-}
+        val fileName = get

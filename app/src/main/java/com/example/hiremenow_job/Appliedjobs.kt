@@ -24,21 +24,27 @@ class Appliedjobs : AppCompatActivity() {
         appliedjobsList = arrayListOf()
 
         database = FirebaseDatabase.getInstance().getReference("Job_Seekers")
+
+        // Retrieve data from Firebase database
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()){
-                    for (dataSnapshot in snapshot.children){
+                if (snapshot.exists()) {
+                    for (dataSnapshot in snapshot.children) {
                         val appjobs = dataSnapshot.getValue(Appjobs::class.java)
+                        // Add each Appjobs object to the appliedjobsList if not already present
                         if (!appliedjobsList.contains(appjobs))
                             appliedjobsList.add(appjobs!!)
                     }
+
+                    // Set up RecyclerView adapter with appliedjobsList data
                     val mAdaptor= MyAdapter(appliedjobsList)
                     recyclerView.adapter = mAdaptor
 
+                    // Handle item click event in RecyclerView
                     mAdaptor.setOnItemClickListener(object: MyAdapter.onItemClickListener {
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@Appliedjobs,AppliedJob_details::class.java)
-                            //put extras to pass customer data
+                            // Put extras to pass customer data
                             intent.putExtra("jsId",appliedjobsList[position].jsId)
                             intent.putExtra("companyNamenJobTitle",appliedjobsList[position].companyNamenJobTitle)
                             intent.putExtra("jsName",appliedjobsList[position].jsName)
@@ -49,14 +55,11 @@ class Appliedjobs : AppCompatActivity() {
                         }
                     })
                 }
-
-//                recyclerView.adapter = MyAdapter(appliedjobsList)
             }
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(this@Appliedjobs, error.toString(), Toast.LENGTH_LONG).show()
             }
-
         })
     }
 }
