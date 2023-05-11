@@ -39,30 +39,6 @@
             tools:layout_editor_absoluteX="37dp"
             tools:layout_editor_absoluteY="143dp">
 
-            <TextView
-                android:id="@+id/ajobId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
-                android:foregroundGravity="center"
-                android:gravity="center"
-                android:text="Record ID"
-                android:textColor="#0D2ACA"
-                android:textColorHint="#090808"
-                android:textSize="24sp"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/aajobId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/acme"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                tools:ignore="MissingConstraints" />
-
 
             <TextView
                 android:id="@+id/aposition"
@@ -377,6 +353,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/q7"
         app:srcCompat="@drawable/selected_account" />
+
+    <TextView
+        android:id="@+id/aajobId"
+        android:layout_width="62dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:textColor="#5050ff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

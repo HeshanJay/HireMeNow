@@ -123,7 +123,7 @@ class MainActivity111 : AppCompatActivity() {
 
 // All input is valid, calculate total salary
         val tot = (BasicSal.toFloat() * Allowance.toFloat() * Ot.toFloat()).toString() //calculation function
-                                                                                       //convert strings to number and floting then do the calculation and find value
+                                                                                       //convert strings to number and floating then do the calculation and find value
 
 
         if(Possition.isEmpty()){                           //if fields not filled
