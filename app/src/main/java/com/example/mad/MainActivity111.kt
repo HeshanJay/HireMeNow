@@ -67,8 +67,26 @@ class MainActivity111 : AppCompatActivity() {
             startActivity(intent)}
 
 
+        cancel1.setOnClickListener { //page clearing on click function
+            clearFields()
+            Toast.makeText(this, "Page cleared.", Toast.LENGTH_SHORT).show()
+        }
+
+
+
     }
 
+    private fun clearFields() {  //page clearing
+        jobPossi.text.clear()
+        commAddre.text.clear()
+        noofVac.text.clear()
+        commName.text.clear()
+        mainReq.text.clear()
+        addiReq.text.clear()
+        basicSal.text.clear()
+        allowance.text.clear()
+        otSal.text.clear()
+    }
     private fun saveAddJob() {
         //getting values
         val Possition = jobPossi.text.toString()
@@ -159,7 +177,9 @@ class MainActivity111 : AppCompatActivity() {
 
 
             }
-    }
 
+
+
+    }
 
 }

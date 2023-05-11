@@ -7,14 +7,19 @@ import android.view.accessibility.AccessibilityManager.AccessibilityServicesStat
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+
 class addjob_Addapter ( val userList : ArrayList<retrive_job>) : RecyclerView.Adapter<addjob_Addapter.MyViewHolder>() {
 
     private lateinit var mListener: onItemClickListener
 
+
+    //interface for the click event
     interface onItemClickListener {
         fun onItemClick(position: Int)
     }
 
+
+    //set the click listner for the item click events
     fun setOnItemClickListener(clickListener : onItemClickListener){
         mListener = clickListener
     }
@@ -32,7 +37,7 @@ class addjob_Addapter ( val userList : ArrayList<retrive_job>) : RecyclerView.Ad
     }
 
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int):MyViewHolder {
-
+        //Inflate the item view layout and create a new view holder
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.addjob_list,parent,false)
         return MyViewHolder(itemView, mListener)
 
@@ -40,6 +45,7 @@ class addjob_Addapter ( val userList : ArrayList<retrive_job>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder:MyViewHolder, position: Int) {
 
+        //bind the data to the view holder
         holder.ComName.text = userList[position].comName
         holder.POssition.text = userList[position].possition
         holder.Main.text = userList[position].main
@@ -49,6 +55,7 @@ class addjob_Addapter ( val userList : ArrayList<retrive_job>) : RecyclerView.Ad
 
     override fun getItemCount(): Int {
 
+        //return the number of items in the data list
         return userList.size
     }
 

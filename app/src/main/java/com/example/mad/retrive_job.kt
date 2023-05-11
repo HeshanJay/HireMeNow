@@ -1,6 +1,6 @@
 package com.example.mad
 
-data class retrive_job(
+data class retrive_job(             //represent data
     var comName: String?=null,
     var possition: String?=null,
     var main: String?=null,

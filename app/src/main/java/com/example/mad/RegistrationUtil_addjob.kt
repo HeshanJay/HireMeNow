@@ -24,16 +24,16 @@ object RegistrationUtil_addjob {
         allowance:String,
         ot :String
     ): Boolean{
-        if(possition.isEmpty() || address.isEmpty()){
+        if(possition.isEmpty() || address.isEmpty()){   //check if fields are empty or not
             return false
         }
-        if(vacancies.isEmpty() || name.isEmpty()){
+        if(vacancies.isEmpty() || name.isEmpty()){   //check if fields are empty or not
             return false
         }
-        if(main.isEmpty() || additional.isEmpty()){
+        if(main.isEmpty() || additional.isEmpty()){   //check if fields are empty or not
             return false
         }
-        if(basic.isEmpty() || allowance.isEmpty() || ot.isEmpty()) {
+        if(basic.isEmpty() || allowance.isEmpty() || ot.isEmpty()) {   //check if fields are empty or not
             return false
         }
         return true

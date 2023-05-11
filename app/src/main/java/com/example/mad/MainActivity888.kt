@@ -65,7 +65,7 @@ class MainActivity888 : AppCompatActivity() {
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
-            Toast.makeText(this,"Job Data deleted",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Job Data deleted",Toast.LENGTH_LONG).show()//toast messeges for deleting
 
             val intent = Intent(this, MainActivity444 ::class.java) //when delete where to goes
             finish()
@@ -78,7 +78,7 @@ class MainActivity888 : AppCompatActivity() {
     }
 
     private fun initView(){
-        bbJobId = findViewById(R.id.aajobId)
+        bbJobId = findViewById(R.id.aajobId)                // find id
         bbCompanyName = findViewById(R.id.aaCompanyname)
         bbPossition = findViewById(R.id.aaposition)
         bbMainReq = findViewById(R.id.aaMainREQ)
@@ -96,7 +96,7 @@ class MainActivity888 : AppCompatActivity() {
 
 
     private fun setValuesToViews(){
-        bbJobId.text = intent.getStringExtra("jobId")
+        bbJobId.text = intent.getStringExtra("jobId")             // set values
         bbCompanyName.text = intent.getStringExtra("comName")
         bbPossition.text = intent.getStringExtra("possition")
         bbMainReq.text = intent.getStringExtra("main")
@@ -112,15 +112,20 @@ class MainActivity888 : AppCompatActivity() {
 
 
     private fun openUpdateDialog(
-        jobId: String,
+        jobId: String, //id get as it is
         comName: String,
         tot: String
     ) {
+        // Create an AlertDialog and inflate the custom layout
+
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
         val mDialogView = inflater.inflate(R.layout.update_addjob, null)
 
         mDialog.setView(mDialogView)
+
+        // Find the EditText fields in the dialog layout
+
 
 //        val cJobid = mDialogView.findViewById<TextView>(R.id.caajobid)
         val cPosition = mDialogView.findViewById<EditText>(R.id.caaposition)
@@ -135,6 +140,9 @@ class MainActivity888 : AppCompatActivity() {
 //        val ctotal = mDialogView.findViewById<EditText>(R.id.caatott)
 
         val btnConfirm = mDialogView.findViewById<Button>(R.id.cedit5)
+
+        // Set the initial values of the EditText fields with the received intent extras
+
 
 //        cJobid.setText(intent.getStringExtra("jobId").toString())
         cPosition.setText(intent.getStringExtra("possition").toString())
@@ -155,7 +163,7 @@ class MainActivity888 : AppCompatActivity() {
 
         btnConfirm.setOnClickListener {
 
-
+            //call the updateJobData function with updated values
             updateJobData(
                 jobId,
                 cPosition.text.toString(),
@@ -204,6 +212,7 @@ class MainActivity888 : AppCompatActivity() {
         Vacancies: String,
         Vtot: String
     ){
+        //det db reference and update specific data record
         val dbRef = FirebaseDatabase.getInstance().getReference("Add_Job").child(id)
         val jobInfo = addJobModel(id,CompanyName,Possition,MainReq,AddiReq,Basic,Allowance,Address,OT,Vacancies,Vtot)
         dbRef.setValue(jobInfo)

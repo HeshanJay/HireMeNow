@@ -14,6 +14,7 @@ import com.google.firebase.database.ValueEventListener
 
 class MainActivity444 : AppCompatActivity() {
 
+// Using recyclerview going to show data array like cards
 
     private lateinit var recyclerview : RecyclerView
     private lateinit var retrive_jobArrayList : ArrayList<retrive_job>
@@ -30,12 +31,14 @@ class MainActivity444 : AppCompatActivity() {
 
         db = FirebaseDatabase.getInstance().getReference("Add_Job")
 
+        // Adding a ValueEventListener to retrieve data from the database
         db.addValueEventListener(object:ValueEventListener{
 
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if(snapshot.exists()){
                     for(dataSnapShot in snapshot.children){
+                        // Retrieve each job data and add it to the retrive_jobArrayList
                         val user = dataSnapShot.getValue(retrive_job::class.java)
                         if(!retrive_jobArrayList.contains(user)){
                             retrive_jobArrayList.add(user!!)
@@ -43,6 +46,7 @@ class MainActivity444 : AppCompatActivity() {
 
                     }
 
+                    // Create an adapter with the retrieved data and set it to the RecyclerView
                     val mAdapter = addjob_Addapter(retrive_jobArrayList)
                     recyclerview.adapter = mAdapter
                     //recyclerview.adapter= addjob_Addapter(retrive_jobArrayList)
@@ -50,7 +54,7 @@ class MainActivity444 : AppCompatActivity() {
                     mAdapter.setOnItemClickListener(object : addjob_Addapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
 
-                            val intent = Intent(this@MainActivity444, MainActivity888::class.java)
+                            val intent = Intent(this@MainActivity444, MainActivity888::class.java) //from where to where
 
                             //put extras
                             intent.putExtra("jobId",retrive_jobArrayList[position].jobId)
@@ -65,6 +69,8 @@ class MainActivity444 : AppCompatActivity() {
                             intent.putExtra("vacasis",retrive_jobArrayList[position].vacasis)
                             intent.putExtra("tot",retrive_jobArrayList[position].tot)
 
+                            // to pass data from one activity to another activity
+
                             startActivity( intent)
 
                         }
@@ -73,21 +79,21 @@ class MainActivity444 : AppCompatActivity() {
                 }
             }
 
-            override fun onCancelled(error: DatabaseError) {
+            override fun onCancelled(error: DatabaseError) {   //toast messege for db error
                 Toast.makeText(this@MainActivity444, error.toString(), Toast.LENGTH_SHORT).show()
             }
         })
 
         val NEXT = findViewById<ImageView>(R.id.imageView10)
         NEXT.setOnClickListener {
-            val intent = Intent(this, MainActivity111::class.java)
+            val intent = Intent(this, MainActivity111::class.java) // image view as a button
             startActivity(intent)
 
         }
 
         val NEXT2 = findViewById<Button>(R.id.new1)
         NEXT2.setOnClickListener {
-            val intent = Intent(this, MainActivity111::class.java)
+            val intent = Intent(this, MainActivity111::class.java)  // button
             startActivity(intent)
 
         }

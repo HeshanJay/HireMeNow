@@ -5,8 +5,8 @@ import org.junit.Test
 
 class RegistrationUtil_addjobTest{
 
-    @Test
-    fun `empty position return false`(){
+    @Test    //anotate
+    fun `empty position return false`(){      //check position
         val result = RegistrationUtil_addjob.validateRegistrationInput(
             "",
             "sss",
@@ -38,7 +38,7 @@ class RegistrationUtil_addjobTest{
     }
 
     @Test
-    fun `empty address return false`(){
+    fun `empty address return false`(){      //check address
         val result = RegistrationUtil_addjob.validateRegistrationInput(
             "Dilshan",
             "",
@@ -70,7 +70,7 @@ class RegistrationUtil_addjobTest{
     }
 
     @Test
-    fun `empty vacancies return false`(){
+    fun `empty vacancies return false`(){      //check vacancies
         val result = RegistrationUtil_addjob.validateRegistrationInput(
             "Dilshan",
             "sss",
